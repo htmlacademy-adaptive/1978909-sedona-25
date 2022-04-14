@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Фото и видео</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img src="img/header-logo.png" width="185" height="96" alt="Sedona logo">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__button-toggle" type="button">
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__user-menu user-list">
+          <li class="user-list__item"><a href="index.html">Главная</a></li>
+          <li class="user-list__item user-list__item--active"><a href="catalog.html">Фото Видео</a></li>
+          <li class="user-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="user-list__item"><a href="https://htmlacademy.ru/">Html Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="gallery">
+    <h1 class="visually-hidden">Фото и видео</h1>
+    <section class="gallery-title gallery-title--background">
+      <div class="gallery-title__wrapper">
+        <img class="gallery-title__text-logo" src="img/sedona-name.svg" width="299" height="39" alt="Logo Sedona.">
+      </div>
+    </section>
+    <section class="catalog-gallery">
+      <h2 class="catalog-gallery__title">Фото и видео</h2>
+      <p class="catalog-gallery__description">Не можете решиться на путешествие<br> из-за курса? Фотографии помогут вам<br> забыть о политике и экономике.</p>
+      <ul class="catalog-gallery__list">
+        <li class="catalog-gallery__item">
+          <img class="catalog-gallery__image" src="img/photo-1.jpg" width="280" height="280" alt="Неродные просторы.">
+          <h3 class="catalog-gallery__name-item">Неродные просторы</h3>
+          <p class="catalog-gallery__author">Автор фото: Борис</p>
+          <button class="catalog-gallery__button button-like"></button>
+          <span class="catalog-gallery__result">1350</span>
+        </li>
+        <li class="catalog-gallery__item">
+          <img class="catalog-gallery__image" src="img/photo-2.jpg" width="280" height="280" alt="Местная растительность.">
+          <h3 class="catalog-gallery__name-item">Местная растительность</h3>
+          <p class="catalog-gallery__author">Автор фото: Сергей</p>
+          <button class="catalog-gallery__button button-like"></button>
+          <span class="catalog-gallery__result">43</span>
+        </li>
+        <li class="catalog-gallery__item">
+          <img class="catalog-gallery__image" src="img/photo-3.jpg" width="280" height="280" alt="Дорога на север.">
+          <h3 class="catalog-gallery__name-item">Дорога на север</h3>
+          <p class="catalog-gallery__author">Автор фото: Петр</p>
+          <button class="catalog-gallery__button button-like"></button>
+          <span class="catalog-gallery__result">96</span>
+        </li>
+        <li class="catalog-gallery__item">
+          <img class="catalog-gallery__image" src="img/photo-4.jpg" width="280" height="280" alt="Мост дьвола.">
+          <h3 class="catalog-gallery__name-item">Мост дьвола</h3>
+          <p class="catalog-gallery__author">Автор фото: Антон</p>
+          <button class="catalog-gallery__button button-like"></button>
+          <span class="catalog-gallery__result">254</span>
+        </li>
+      </ul>
+    </section>
+    <section class="video-content">
+      <h2 class="video-content__title">Все еще сомневаетесь?</h2>
+      <p class="video-content__description">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не<br> подорожали в очередной раз!</p>
+      <video class="video-content__presentation" src="" width="280" height="177" poster="img/preview-presentation.jpg"></video>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer__name">#visitSEDONA</h2>
+    <div class="media-list social-media">
+      <ul class="social-media__list-contacts">
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--vkontakte" href="https://vk.com/htmlacademy"><img class="social-media__vkontakte" src="img/icon-media-vkontakte.svg" alt="icon vkontakte"></a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--telegram" href="https://t.me/htmlacademy"><img class="social-media__telegram" src="img/icon-media-telegram.svg" alt="icon telegram"></a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link social-media__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><img class="social-media__youtube" src="img/icon-media-youtube.svg" alt="icon youtube"></a>
+      </ul>
+    </div>
+    <div class="footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__logo" src="img/htmlacademy-logo-footer.svg" alt="htmlacademy logo"></a>
+    </div>
+  </footer>
+</body>
+</html>
