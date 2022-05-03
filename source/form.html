@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Форма отзыва</title>
   <link href="css/style.css" rel="stylesheet">
+  <title>Форма отзыва</title>
 </head>
 <body class="feedback-body">
   <header class="header">
@@ -26,7 +26,7 @@
   </header>
   <main class="feedback">
     <h1 class="visually-hidden">Оставьте отзыв</h1>
-    <section class="feedback-title feedback-title--background">
+    <section class="feedback-title feedback-title__background">
       <h2 class="visually-hidden">Sedona</h2>
       <div class="feedback-title__wrapper">
         <img class="feedback-title__text-logo" src="img/sedona-name.svg" width="229" height="39" alt="Logo Sedona.">
@@ -57,25 +57,25 @@
       </fieldset>
       <fieldset class="status-info">
         <legend class="status-info__name headline-field">Ваше общее впечатление:</legend>
-        <label class="status-info__item" for="three"><input class="status-info__point status-info__point--checked" type="radio" id="three" name="status" value="positive" checked> Скорее положительное </label>
-        <label class="status-info__item" for="two"><input class="status-info__point" type="radio" id="two" name="status" value="negative"> Скорее отрицательное</label>
-        <label class="status-info__item" for="one"><input class="status-info__point" type="radio" id="one" name="status" value="unsure"> Затрудняюсь ответить</label>
+        <label class="status-info__item point-view" for="three"><input class="status-info__point status-info__point--checked" type="radio" id="three" name="status" value="positive" checked> Скорее положительное </label>
+        <label class="status-info__item point-view" for="two"><input class="status-info__point" type="radio" id="two" name="status" value="negative"> Скорее отрицательное</label>
+        <label class="status-info__item point-view" for="one"><input class="status-info__point" type="radio" id="one" name="status" value="unsure"> Затрудняюсь ответить</label>
       </fieldset>
       <fieldset class="place-info">
         <legend class="place-info__name headline-field">Посещенные достопримечательности:</legend>
-        <label class="place-info__item">
+        <label class="place-info__item point-view">
           <input class="place-info__point" type="checkbox" name="Devil-Bridge" checked>
           Мост Дьявола
         </label>
-        <label class="place-info__item">
+        <label class="place-info__item point-view">
           <input class="place-info__point" type="checkbox" name="Mount-Bell" checked>
           Гора-Колокол
         </label>
-        <label class="place-info__item">
+        <label class="place-info__item point-view">
           <input class="place-info__point" type="checkbox" name="Slide-park" checked>
           Слайд-парк
         </label>
-        <label class="place-info__item">
+        <label class="place-info__item point-view">
           <input class="place-info__point" type="checkbox" name="Red-rocks">
           Красные скалы
         </label>
@@ -83,8 +83,8 @@
       <fieldset class="description-info">
         <legend class="description-info__name headline-field">Опиши свои эмоции:</legend>
         <textarea class="description-info__item">Опишите подробно все свои восторги</textarea>
-          <input class="button " type="submit" value="Отправить отзыв">
-          <p class="description-info__tooltip">* — обязательные поля </p>
+        <input class="button " type="submit" value="Отправить отзыв">
+        <p class="description-info__tooltip">* — обязательные поля </p>
       </fieldset>
     </form>
   </main>

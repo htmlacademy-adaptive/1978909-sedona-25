@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Фото и видео</title>
   <link href="css/style.css" rel="stylesheet">
+  <title>Фото и видео</title>
 </head>
 <body>
   <header class="header">
@@ -26,7 +26,7 @@
   </header>
   <main class="gallery">
     <h1 class="visually-hidden">Фото и видео</h1>
-    <section class="gallery-title gallery-title--background">
+    <section class="gallery-title gallery-title__background">
       <div class="gallery-title__wrapper">
         <img class="gallery-title__text-logo" src="img/sedona-name.svg" width="299" height="39" alt="Logo Sedona.">
       </div>
@@ -39,29 +39,37 @@
           <img class="catalog-gallery__image" src="img/photo-1.jpg" width="280" height="280" alt="Неродные просторы.">
           <h3 class="catalog-gallery__name-item">Неродные просторы</h3>
           <p class="catalog-gallery__author">Автор фото: Борис</p>
-          <button class="catalog-gallery__button button-like"></button>
-          <span class="catalog-gallery__result">1350</span>
+          <div class="catalog-gallery__mark">
+            <button class="catalog-gallery__button button-like"></button>
+            <span class="catalog-gallery__result">1350</span>
+          </div>
         </li>
         <li class="catalog-gallery__item">
           <img class="catalog-gallery__image" src="img/photo-2.jpg" width="280" height="280" alt="Местная растительность.">
           <h3 class="catalog-gallery__name-item">Местная растительность</h3>
           <p class="catalog-gallery__author">Автор фото: Сергей</p>
-          <button class="catalog-gallery__button button-like"></button>
-          <span class="catalog-gallery__result">43</span>
+          <div class="catalog-gallery__mark">
+            <button class="catalog-gallery__button button-like"></button>
+            <span class="catalog-gallery__result">43</span>
+          </div>
         </li>
         <li class="catalog-gallery__item">
           <img class="catalog-gallery__image" src="img/photo-3.jpg" width="280" height="280" alt="Дорога на север.">
           <h3 class="catalog-gallery__name-item">Дорога на север</h3>
           <p class="catalog-gallery__author">Автор фото: Петр</p>
-          <button class="catalog-gallery__button button-like"></button>
-          <span class="catalog-gallery__result">96</span>
+          <div class="catalog-gallery__mark">
+            <button class="catalog-gallery__button button-like"></button>
+            <span class="catalog-gallery__result">96</span>
+          </div>
         </li>
         <li class="catalog-gallery__item">
           <img class="catalog-gallery__image" src="img/photo-4.jpg" width="280" height="280" alt="Мост дьвола.">
           <h3 class="catalog-gallery__name-item">Мост дьвола</h3>
           <p class="catalog-gallery__author">Автор фото: Антон</p>
-          <button class="catalog-gallery__button button-like"></button>
-          <span class="catalog-gallery__result">254</span>
+          <div class="catalog-gallery__mark">
+            <button class="catalog-gallery__button button-like"></button>
+            <span class="catalog-gallery__result">254</span>
+          </div>
         </li>
       </ul>
     </section>
