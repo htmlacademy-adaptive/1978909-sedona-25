@@ -1,5 +1,16 @@
 .status {
-  background-color: #ffffff;
-  width: 320px;
+  background-color: @lightgrey;
   font-family: "PT Sans", sans-serif;
+}
+
+.status__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 40px;
+  }
 }

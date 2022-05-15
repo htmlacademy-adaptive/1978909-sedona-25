@@ -4,7 +4,17 @@
   padding: 26px 18px;
   margin: 0;
   list-style-type: none;
-  background-color: #eeeeee;
+  background-color: @lightgrey;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .catalog__advantage-item {

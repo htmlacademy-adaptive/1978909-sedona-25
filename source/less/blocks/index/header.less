@@ -1,10 +1,21 @@
 .header {
-  width: 320px;
-  margin: 0;
+  color: #ffffff;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__logo {
   display: none;
   justify-content: center;
+  height: 96px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    height: 518px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+  }
 }
