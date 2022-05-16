@@ -1,11 +1,21 @@
 .description-card {
-  background-color: #81b3d2;
+  background-color: @lightblue;
   padding: 39px 16px 35px 15px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
 .description-card__preview {

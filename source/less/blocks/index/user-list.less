@@ -1,5 +1,4 @@
 .user-list {
-  background-color: #81b3d2;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -8,12 +7,27 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    width: 762px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }
 
 .user-list__item {
   padding: 17px 0 12px 0;
   text-align: center;
-  list-style-type: none;
 }
 
 .user-list a {
