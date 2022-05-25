@@ -1,7 +1,23 @@
 .footer {
-  width: 320px;
   background-color: #ffffff;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .footer__name {
@@ -13,4 +29,12 @@
   text-transform: uppercase;
   font-family: inherit;
   padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 97px 45px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 254px 45px 104px;
+  }
 }

@@ -2,4 +2,11 @@
   border: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

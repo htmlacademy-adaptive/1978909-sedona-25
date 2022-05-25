@@ -1,20 +1,32 @@
 .description-card {
   background-color: @lightblue;
-  padding: 39px 16px 35px 15px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+}
+
+.description-card__wrapper {
+  padding: 39px 16px 35px 15px;
+  text-align: center;
+  background-color: @lightblue;
+
+  @media (min-width: @tablet-width) {
+    margin: auto;
   }
 }
 
@@ -32,4 +44,59 @@
 
 .description-card__information {
   margin: 0;
+}
+
+.description-card__image {
+  width: 320px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/first-advantage.jpg");
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("../../../img/avanges-first-desktop.jpg");
+    background-position: right;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("../../../img/avanges-first-desktop2.jpg");
+    background-position: right;
+    padding: 0;
+    background-color: #ffffff;
+  }
+}
+
+
+.description-card__second-image {
+  width: 320px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/second-advantages.jpg");
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("../../../img/advantages-second-desktop.jpg");
+    background-position: left;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-image: url("../../../img/advantages-second-desktop2.jpg");
+    background-position: left;
+    padding: 0;
+    background-color: #ffffff;
+  }
 }
