@@ -2,6 +2,11 @@
   display: flex;
   justify-content: start;
   padding: 23px 15px 0 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .point__icon-advantage {
@@ -19,6 +24,11 @@
 .point__opinion {
   flex-direction: column;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .point__description {

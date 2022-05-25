@@ -5,6 +5,15 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 28px 98px 48px 98px;
+  }
 }
 
 .status-info__point {

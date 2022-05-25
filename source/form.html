@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>Форма отзыва</title>
 </head>
@@ -29,32 +30,34 @@
     <section class="feedback-title feedback-title__background">
       <h2 class="visually-hidden">Sedona</h2>
       <div class="feedback-title__wrapper">
-        <img class="feedback-title__text-logo" src="img/sedona-name.svg" width="229" height="39" alt="Logo Sedona.">
+        <div class="feedback-title__image"></div>
         <p class="feedback-title__feedback-preview">Оставьте свой отзыв</p>
         <p class="feedback-title__feedback-apperal">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </section>
     <form class="setting-form" action="https://echo.htmlacademy.ru/" method="post">
-      <fieldset class="full-name setting-form__wrapper">
-        <legend class="full-name__title headline-field">Представтесь:</legend>
-        <label class="full-name__item font-name-item"> Имя*:
-          <input class="full-name__point field-view" type="text" placeholder="Пётр">
-        </label>
-        <label class="full-name__item font-name-item"> Фамилия*:
-          <input class="full-name__point field-view" type="text" placeholder="Пустота">
-        </label>
-        <label class="full-name__item font-name-item"> Отчество:
-          <input class="full-name__point field-view" type="text" placeholder="Викторович">
-      </fieldset>
-      <fieldset class="contacts-info">
-        <legend class="contacts-info__name headline-field">Контактная информация:</legend>
-        <label class="contacts-info__item font-name-item"> Контактный телефон*:
-          <input class="contacts-info__point field-view" type="number" placeholder="Введите телефон">
-        </label>
-        <label class="contacts-info__item font-name-item"> Электронная почта*:
-          <input class="contacts-info__point field-view" type="email" placeholder="Введите e-mail">
-        </label>
-      </fieldset>
+      <div class="setting-form__wrapper">
+        <fieldset class="full-name">
+          <legend class="full-name__title headline-field">Представтесь:</legend>
+          <label class="full-name__item font-name-item"> Имя*:
+            <input class="full-name__point field-view" type="text" placeholder="Пётр">
+          </label>
+          <label class="full-name__item font-name-item"> Фамилия*:
+            <input class="full-name__point field-view" type="text" placeholder="Пустота">
+          </label>
+          <label class="full-name__item font-name-item"> Отчество:
+            <input class="full-name__point field-view" type="text" placeholder="Викторович">
+        </fieldset>
+        <fieldset class="contacts-info">
+          <legend class="contacts-info__name headline-field">Контактная информация:</legend>
+          <label class="contacts-info__item font-name-item"> Контактный телефон*:
+            <input class="contacts-info__point field-view" type="number" placeholder="Введите телефон">
+          </label>
+          <label class="contacts-info__item font-name-item"> Электронная почта*:
+            <input class="contacts-info__point field-view" type="email" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+      </div>
       <fieldset class="status-info">
         <legend class="status-info__name headline-field">Ваше общее впечатление:</legend>
         <label class="status-info__item point-view" for="three"><input class="status-info__point status-info__point--checked" type="radio" id="three" name="status" value="positive" checked> Скорее положительное </label>

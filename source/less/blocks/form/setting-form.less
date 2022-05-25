@@ -1,4 +1,23 @@
 .setting-form {
-  width: 320px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding: 0 60px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 0 120px;
+    margin: 0;
+  }
+}
+
+.setting-form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
 }
